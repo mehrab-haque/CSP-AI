@@ -9,7 +9,6 @@ const takeInput=async ()=>{
     var formatedInput=[]
     for(var i=0;i<N;i++){
         formatedInput.push([])
-        //console.log(inputLines[i+3])
         inputLines[i+3].split(',').map(s=>{
             formatedInput[i].push(parseInt(s.split('|')[0]))
         })

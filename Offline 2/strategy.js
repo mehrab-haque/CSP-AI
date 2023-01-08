@@ -3,14 +3,7 @@
 const backTrack=(board,heuristic)=>{
     var currCell=heuristic(board.state)
     if(currCell===null){
-        board.state.map(r=>{
-            var row=''
-            r.map(c=>{
-                row+=`${c.value}\t`
-            })
-            console.log(row)
-        })
-        console.log('solved')
+        board.print()
         return true
     }else{
         var sortedDomain=getLeastConstariningValues(board,currCell)

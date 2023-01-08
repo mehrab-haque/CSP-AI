@@ -11,7 +11,7 @@ class Game{
     }
 
     run=()=>{
-        this.board.solve(Strategy.backTrack,Heuristics.vah1)
+        this.board.solve(Strategy.backTrack,Heuristics.vah2)
     }
 
 }

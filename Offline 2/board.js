@@ -46,6 +46,16 @@ class Board{
     solve=(algorithm,heuristic)=>{
         algorithm(this,heuristic)
     }
+
+    print=()=>{
+        this.state.map(r=>{
+            var row=''
+            r.map(c=>{
+                row+=`${c.value}\t`
+            })
+            console.log(row)
+        })
+    }
 }
 
 module.exports=Board
